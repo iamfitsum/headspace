@@ -7,7 +7,7 @@ export default function HomePage() {
     <FlatList
       data={meditations}
       className="bg-white"
-      contentContainerClassName="gap-5 p-3"
+      contentContainerClassName="gap-8 p-3"
       renderItem={({ item }) => <MeditationListItem meditation={item} />}
       keyExtractor={(item) => item.id.toString()}
     />
