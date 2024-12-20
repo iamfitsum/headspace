@@ -1,12 +1,15 @@
-import { StyleSheet, Text, View } from "react-native";
+import { FlatList } from "react-native";
+import { meditations } from "@/data";
+import { MeditationListItem } from "@/components/MeditationListItem";
 
 export default function HomePage() {
   return (
-    <View className="flex flex-1 items-center p-6">
-      <View className="flex flex-1 justify-center max-w-[960px]">
-        <Text className="text-[64px] font-extrabold">Hello World</Text>
-        <Text className="text-3xl text-[#38434D]">This is the first page of your app.</Text>
-      </View>
-    </View>
+    <FlatList
+      data={meditations}
+      className="bg-white"
+      contentContainerClassName="gap-5 p-3"
+      renderItem={({ item }) => <MeditationListItem meditation={item} />}
+      keyExtractor={(item) => item.id.toString()}
+    />
   );
 }
