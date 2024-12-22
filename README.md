@@ -101,7 +101,10 @@ This project is a meditation app inspired by Headspace, built with **Expo** and 
 
 ## 📸 Screenshots
 
-
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/1b1c283d-ff89-4494-94da-bc7516505bad" alt="Screenshot 1" width="45%"/>
+  <img src="https://github.com/user-attachments/assets/5126022c-961e-4e3e-acec-0246f9892e5f" alt="Screenshot 2" width="45%"/>
+</p>
 
 ## 📦 Dependencies
 
