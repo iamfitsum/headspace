@@ -12,6 +12,7 @@ import { Pressable } from "react-native";
 import MaterialCommunityIcons from "@expo/vector-icons/MaterialCommunityIcons";
 import Slider from "@react-native-community/slider";
 import { Audio } from "expo-av";
+import AnimatedBackground from "@/components/AnimatedBackground";
 
 export default function MeditationDetails() {
   const { id } = useLocalSearchParams();
@@ -75,6 +76,7 @@ export default function MeditationDetails() {
 
   return (
     <SafeAreaView className="bg-orange-400 flex-1 p-2 justify-between">
+      <AnimatedBackground />
       {/* Header */}
       <View className="flex-1">
         <View className="flex-row items-center justify-between p-10">
